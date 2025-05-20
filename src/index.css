@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom style for the Hobbies field array items */
+/* Ensure these classes are used in your ArrayField component for Hobbies */
+.hobbies-array-field {
+  @apply flex flex-col gap-2;
+}
+.hobbies-array-field .hobby-item {
+  @apply flex items-center gap-2 bg-white border border-indigo-200 rounded px-2 py-1;
+}
+.hobbies-array-field .hobby-remove-btn {
+  @apply ml-2 text-red-500 hover:text-red-700 font-bold;
+}
+.hobbies-array-field .hobby-add-btn {
+  @apply mt-2 px-3 py-1 bg-indigo-500 text-white rounded hover:bg-indigo-600;
+}
+
